@@ -59,6 +59,6 @@ contract LinkedList {
   struct Object{ bytes32 next;uint number;bytes32 name;}
   bytes32 public head;
   mapping (bytes32 => Object) public objects;
-  function total() public view returns (uint) {}
-  function getEntry(bytes32 _id) public view returns (bytes32,uint,bytes32){}
+  function total() public view returns (uint);
+  function getEntry(bytes32 _id) public view returns (bytes32,uint,bytes32);
   }
